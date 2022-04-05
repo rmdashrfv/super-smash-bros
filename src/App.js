@@ -14,4 +14,6 @@ function App() {
   );
 }
 
+// const Fighter = {name: 'Roy', color: 'red'}
+
 export default App;
