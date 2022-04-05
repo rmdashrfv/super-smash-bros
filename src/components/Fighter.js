@@ -1,6 +1,8 @@
-export default ({ name, color }) => {
+
+export default ({ name, color, setVisible }) => {
   return(
     <div
+      onClick={() => {setVisible(true)}}
       className="fighter"
       style={{
         backgroundColor: color,
