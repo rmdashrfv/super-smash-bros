@@ -13,6 +13,10 @@ const characters = [
   {name: 'Falco', color: ['purple', 'lightskyblue']},
   {name: 'Byleth', color: ['teal', '#d33']},
   {name: 'Link', color: ['lightblue', 'goldenrod']},
+  {name: 'Kazuya', color: ['lightblue', 'goldenrod']},
+  {name: 'Sephiroth', color: ['lightblue', 'midnightblue', '#fff']},
+  {name: 'Dark_Samus', color: ['lightblue', 'goldenrod']},
+  {name: 'Donkey_Kong', color: ['tan', 'brown']}
 ]
 
 function App() {
@@ -27,7 +31,7 @@ function App() {
         })}
      </div>
       <FighterScreen isVisible={visible} setVisible={setVisible} selectedCharacter={selectedCharacter} />
-      <SideNavigation isVisible={visible} characters={characters} />
+      <SideNavigation isVisible={visible} characters={characters} setSelectedCharacter={setSelectedCharacter} />
     </div>
   );
 }
