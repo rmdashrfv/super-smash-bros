@@ -8,8 +8,7 @@ export default ({ name, color, setVisible, setSelectedCharacter }) => {
       }}
       className="fighter"
       style={{
-        backgroundColor: color,
-        backgroundImage: `url(https://www.smashbros.com/assets_v2/img/fighter/${name.toLowerCase()}/main.png)`
+        backgroundImage: `url(https://www.smashbros.com/assets_v2/img/fighter/${name.toLowerCase()}/main.png), linear-gradient(140deg, ${color}, lightyellow, lightskyblue)`
       }}>
       <h4>{name.replace('_', ' ')}</h4>
     </div>
